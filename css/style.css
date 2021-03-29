@@ -59,7 +59,6 @@ a {
     margin-left: 93px;
 }
 .header-nav-list a {
-    display: block;
     color: var(--main-text);
     font-size: 14px;
     font-weight: 500;
@@ -91,6 +90,9 @@ a {
 .header a:hover, .header a:focus {
     color: var(--ad-hover-text);
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
 }
 .header-icon-text svg {
     display: flex;
@@ -152,6 +154,9 @@ a {
 }
 .btn:hover, .btn:focus {
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
 }
 .is-hidden {
     visibility: hidden;
@@ -316,10 +321,14 @@ a {
     border-radius: 50%;
 }
 .social-icon a:focus svg {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
     fill: var(--back-team);
 }
 .social-icon a:focus {
     background-color: var(--back-ad-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
     }
 /* секция ПОСТОЯННЫЕ КЛИЕНТЫ */
 .const-clients {
@@ -384,13 +393,13 @@ a {
 }
 .client-svg:focus svg {
     fill: var(--back-ad-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
 }
 /* ПОРТФОЛИО */
 .sec-view {
     padding: 94px 0 64px 0;
-}
-.sec-view li:hover, .sec-view li:focus {
-    cursor: pointer;
 }
 .tools {
     display: flex;
@@ -415,6 +424,9 @@ a {
     background-color: var(--back-ad-hover);
     color: var(--on-back-text);
     box-shadow: 2px 4px 4px 2px var(--shadow-main);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
 }
 .view {
     display: flex;
@@ -430,11 +442,10 @@ a {
     border: 1px solid var(--line-view);
     margin-bottom: 30px;
 }
-.view li:hover {
+.view-a:focus, .view li:hover {
     box-shadow: 0 4px 8px 0 var(--shadow-main);
-}
-.view-a:focus {
-    box-shadow: 0 4px 8px 0 var(--shadow-main);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 .view h3 {
     color: var(--main-text);
@@ -490,6 +501,9 @@ a {
 .footer a:hover, .footer a:focus {
     color: var(--ad-hover-text);
     cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
 }
 .footer-join {
     color: var(--on-back-text);
@@ -516,6 +530,9 @@ a {
 }
 .footer-social-icon-a:hover, .footer-social-icon-a:focus {
     background-color: var(--back-ad-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
 }
 .icon-f {
     fill: var(--on-back-text);
